@@ -1,5 +1,6 @@
 // views/widgets/add_note_model_sheet.dart
 import 'package:flutter/material.dart';
+import 'package:note_app/views/widgets/custom_text_filed.dart';
 
 class AddNoteModelSheet extends StatelessWidget {
   const AddNoteModelSheet({super.key});
@@ -7,6 +8,7 @@ class AddNoteModelSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        
       padding: const EdgeInsets.all(16.0),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -17,12 +19,7 @@ class AddNoteModelSheet extends StatelessWidget {
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16.0),
-          TextField(
-            decoration: InputDecoration(
-              labelText: 'Title',
-              border: OutlineInputBorder(),
-            ),
-          ),
+          CustomTextFiled(),
           const SizedBox(height: 16.0),
           TextField(
             decoration: InputDecoration(
