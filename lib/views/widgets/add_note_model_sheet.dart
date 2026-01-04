@@ -8,26 +8,20 @@ class AddNoteModelSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        
+
       padding: const EdgeInsets.all(16.0),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Add New Note',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
+          // Text(
+          //   'Add New Note',
+          //   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          // ),
+          // const SizedBox(height: 16.0),
+          CustomTextFiled(hintText: 'title',),
           const SizedBox(height: 16.0),
-          CustomTextFiled(),
-          const SizedBox(height: 16.0),
-          TextField(
-            decoration: InputDecoration(
-              labelText: 'Content',
-              border: OutlineInputBorder(),
-            ),
-            maxLines: 4,
-          ),
+          CustomTextFiled(hintText: 'Content', maxLines: 4,),
           const SizedBox(height: 16.0),
           ElevatedButton(
             onPressed: () {
