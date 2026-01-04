@@ -1,6 +1,7 @@
 // main.dart
 // main.dart
 import 'package:flutter/material.dart';
+import 'package:note_app/views/note_view.dart';
 
 void main() {
   runApp(const NotesApp());
@@ -19,10 +20,8 @@ class NotesApp extends StatelessWidget {
         //scaffoldBackgroundColor: Colors.blueGrey,
         brightness: Brightness.dark,
       ),
-      home: Scaffold(
-        appBar: AppBar(title: const Text("مرحبا رضوان")),
-        body: Center(child: const Text("اهلا بك لتصبح عبقري Flutter !")),
-      ),
+      home:const NoteView(),
+
     );
   }
 }
