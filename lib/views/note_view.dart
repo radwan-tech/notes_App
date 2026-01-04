@@ -8,6 +8,15 @@ class NoteView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     floatingActionButton: FloatingActionButton(
+           backgroundColor: const Color.fromARGB(255, 101, 173, 168),
+       shape: RoundedRectangleBorder(
+         borderRadius: BorderRadius.circular(35),
+
+       ),
+       onPressed: () {},
+       child: Icon(Icons.add, size: 24, color: Colors.black),
+       ),
       body: NoteBodyView(),
 
     );

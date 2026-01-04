@@ -34,7 +34,7 @@ class NoteItem extends StatelessWidget {
               child: Text(
                 'Learn some cool Flutter tip.',
                 style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 18,
                   color: Colors.black.withOpacity(0.5),
                 ),
               ),
